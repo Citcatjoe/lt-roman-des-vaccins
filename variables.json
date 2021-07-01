@@ -1,0 +1,15 @@
+{
+	"title": "Les plus belles plages de Romandie",
+	"description": "Une série d'été du journal Le Temps",
+	"authors": "Auteurs ici",
+	"imgSocial": "social.jpg", 
+
+	"navBarStyle": "black",
+	"navBarOffset": "0",
+	"navBarLocked": false,
+
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "http://www.letemps.ch"
+	}
+}

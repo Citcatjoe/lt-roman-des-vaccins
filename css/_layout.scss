@@ -1,0 +1,303 @@
+aside
+{
+	width: 20.59rem;
+	height: 100%;
+	background: red;
+	float: left;
+	border-right: 3px solid $white;
+	position: fixed;
+	overflow: hidden;
+	transition: opacity 0.3s linear, visibility 0.3s linear;
+	opacity: 1;
+	visibility: visible;
+
+	background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+
+	// background: $gradient-color1; 
+	// background: -webkit-linear-gradient(to top, lighten($gradient-color1, 8%) , lighten($gradient-color2, 5%)); 
+	// background: linear-gradient(to top, lighten($gradient-color1, 8%) , lighten($gradient-color2, 5%)); 
+
+	// background: url('../img/test.png');
+	// background-size: cover;
+	// background-position: -50% center;
+
+	@include breakpoint(xs) {   
+        width: 100%;
+        height: 9.5rem;
+        border-right: none;
+        border-bottom: 3px solid $white;
+        position: relative;
+        float: none;
+        clear: both;
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top:0;
+        z-index: 4;
+    }
+    
+    img.logo-lt
+    {
+    	width: 80%;
+    	max-width: 12.35rem;
+    	margin: 5.59rem auto 5.06rem auto;
+
+    	@include breakpoint(xs) {   
+	        display: none;
+	    }
+    }    
+
+    ul 
+    {
+		overflow: auto;
+		width: 100%;
+		position: absolute;
+		z-index: 10;
+
+		@include breakpoint(xs) {   
+	        position: absolute;
+	        bottom: 0;
+	        width: 100%;
+	    }
+
+		li 
+	    {	
+	    	width: 100%;
+	    	padding: 0.69em 0 0.69em 0;
+	    	text-align: center;
+	    	list-style: none;
+	    	font-family: 'Tiempos Headline';
+			font-weight: 900;
+	    	font-size: 1.4em;
+	    	color: $white;
+	    	// text-transform: uppercase;
+	    	-webkit-font-smoothing: antialiased; 
+	    	-moz-osx-font-smoothing: grayscale;
+	    	// letter-spacing: 0.15em;
+
+	    	@include breakpoint(xs) {   
+		        width: calc(100% / 8);
+		        float: left;
+		        //text-shadow: 1px 2px 2px #545454;
+		    }
+
+	    	&:hover, &.is-active
+	    	{
+	    		background: $white;
+	    		color: darken($gradient-color2, 50%);
+	    	}
+
+			&.is-active
+			{
+				background: $white;
+	    		color: darken($gradient-color2, 50%);
+			}
+
+			span 
+			{
+				@include breakpoint(xs) {   
+			        display: none;
+			    }
+			}
+	    }
+    }
+
+    img.logo-se
+    {
+    	position: absolute;
+    	bottom: 100px;
+    	opacity: 0.05;
+
+    	@include breakpoint(xs) {   
+	        top: 50%;
+	        left: 50%;
+	        transform: translate(-50%, -50%);
+	        width: 40%;
+	        opacity: 0.15;
+	    }
+    }
+
+    footer 
+    {
+    	width: 100%;
+    	bottom: 2em;
+    	position: absolute;
+    	text-align: center;
+    	padding-left: 50%;
+    	transform: translateX(-25%);
+
+    	@include breakpoint(xs) {   
+	        display: none;
+	    }		
+
+	    a 
+	    {
+	    	display: block;
+	    	float: left;
+	    	width: 33.33333%;
+	    	text-align: center;
+	    }
+
+    	img
+    	{
+    		width: 2em;
+    		height: auto;
+    		//float: left;
+    		margin-right: auto;
+    		margin-left: auto;
+    		transition: all 0.2s;
+
+    		// &:last-child
+    		// {
+    		// 	margin-right: 0;
+    		// }
+
+    		&:hover
+    		{
+    			transform: translateY(-10%);
+    			transition: all 0.2s;
+    		}
+    	}
+    }
+}
+
+div#wrapper
+{
+	width: calc(100% - 20.59rem);
+	height: 100%;
+	background: $gray;
+	float: right;
+	position: relative;
+	overflow: hidden;
+	transition: opacity 0.3s linear, visibility 0.3s linear;
+	opacity: 1;
+	visibility: visible;
+
+	@include breakpoint(xs) {   
+        width: 100%;
+        height: 100%;
+        //height: calc(100% - 9.5rem);
+        float: none;
+        clear: both;
+    }
+
+	div.slide
+	{
+		width: 100%;
+		min-height: 100%;
+		overflow: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		transform: translateY(100%);
+		//overflow: hidden;
+
+		div.slide-gradient
+		{
+			width: 100%;
+			min-height: 100%;
+			// height: 10000px;  
+			background: $black;
+			// opacity: 0.5;
+			position: fixed;
+			z-index: 5;
+
+			//background: $gradient-color1; /* fallback for old browsers */
+			//background: -webkit-linear-gradient(to right, rgba(0, 0, 0, ) , lighten($gradient-color2, 5%)); /* Chrome 10-25, Safari 5.1-6 */
+			//background: linear-gradient(to right, lighten($gradient-color1, 8%) , lighten($gradient-color2, 5%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			//      background: linear-gradient(to right, rgba(0,0,0, 1) 0, rgba(0,0,0, 0.45) 50%, rgba(0,0,0,0) 100%);
+			//background: -webkit-radial-gradient(80% 60%, rgba(0,0,0,0) 0, rgba(0,0,0,0.7) 85%, rgba(0,0,0, 1) 100%);
+			//background: radial-gradient(at 80% 60%, rgba(0,0,0,0) 0, rgba(0,0,0,0.7) 85%, rgba(0,0,0, 1) 100%);
+			background: rgba(0, 0, 0, 0.5);
+
+			@include breakpoint(xs) {   
+		        opacity: 0.8;
+		    }
+		}
+
+		div.slide-content
+		{
+			width: 100%;
+			padding: 12em 6.75em 0 6.75em; 
+			position: absolute;
+			z-index: 10;
+
+			@include breakpoint(xs) {   
+		        padding: 11.5rem 4rem 3rem 4rem;
+		    }
+
+			div.slide-content-episode
+			{
+				width: 100%;
+				max-width: 600px;
+			}
+		}
+	}
+
+	div#slide01
+	{
+		background: url('../img/chapitre1.jpg');
+		background-size: cover;
+		background-position: 75% 100%;
+		z-index: 3;
+	}
+
+	div#slide02
+	{
+		background: url('../img/chapitre1.jpg'); 
+		background-size: cover;
+		background-position: 75% 100%;
+		z-index: 3;
+	}
+
+	div#slide03
+	{
+		background: url('../img/chapitre1.jpg');
+		background-size: cover;
+		background-position: 75% 100%;
+		z-index: 3;
+	}
+
+	div#slide04
+	{
+		background: url('../img/chapitre1.jpg');
+		background-size: cover;
+		background-position: 75% 100%;
+		z-index: 3;
+	}
+
+	div#slide05
+	{
+		background: url('../img/chapitre1.jpg');
+		background-size: cover;
+		background-position: 75% 100%;
+		z-index: 3;
+	}
+
+	div#slide06
+	{
+		background: url('../img/bg-slide1.jpg');
+		background-size: cover;
+		background-position: 75% 100%;
+		z-index: 3;
+	}
+
+	div#slide07
+	{
+		background: url('../img/bg-slide2.jpg');
+		background-size: cover;
+		background-position: 75% 100%;
+		z-index: 3;
+	}
+
+	div#slide08
+	{
+		background: url('../img/bg-slide3.jpg');
+		background-size: cover;
+		background-position: 75% 100%;
+		z-index: 3;
+	}
+}

@@ -1,0 +1,138 @@
+{% use '_blocks.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		{{ block('head_brand') }}
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/loader.css" />
+		<link rel="stylesheet" type="text/css" href="css/tiempos.css" />
+		<link href='https://fonts.googleapis.com/css?family=Raleway:500,700,300,800' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body style="padding-top: {{ navBarOffset }};" class="loading">
+		{{ block('bar_brand') }}
+		<!-- <div class="overlay">
+			<img class="logo-lt-blanc" src="img/logo-lt-blanc.svg" alt="">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div>  -->
+
+		<aside>
+			<img class="logo-lt" src="img/logo-lt.svg" alt="">
+			<h5>épisodes</h5>
+			<ul>
+				<a href="#slide01"><li class="is-active"><span>Episode</span> 1</li></a>
+				<a href="#slide02"><li><span>Episode</span> 2</li></a>
+				<a href="#slide03"><li><span>Episode</span> 3</li></a>
+				<a href="#slide04"><li><span>Episode</span> 4</li></a>
+				<a href="#slide05"><li><span>Episode</span> 5</li></a>
+				
+			</ul>
+			<footer>
+				<a target="blank" href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button"><img src="img/launching-social-facebook.svg" alt=""></a>
+				<a target="blank" href="https://twitter.com/intent/tweet?text={{ description ~ ' ' ~ app.url ~ ' '|url_encode }}&via=letemps"><img src="img/launching-social-twitter.svg" alt=""></a>
+				<a target="blank" href="https://www.linkedin.com/shareArticle?url={{ app.url }}&mini=true&title={{ title|url_encode }}&summary={{ description|url_encode }}&source={{ 'Le Temps'|url_encode }}"><img src="img/launching-social-linkedin.svg" alt=""></a>
+			</footer>
+			<!-- <img class="logo-se" src="img/logo-se.svg" alt=""> -->
+		</aside>
+
+		<div id="wrapper">
+
+			<div id="slide01" class="slide is-active">
+				<div class="slide-gradient"></div>
+				<div class="slide-content">
+					<!-- <h1><span>Les plus belles plages de Romandie<br></span>Voguez le temps d'un safari lacustre ou saluez le soleil face aux sommets grâce aux bons plans d'été 2016</h1> -->
+					<div class="slide-content-episode">
+						<h2>Le cheminement du vaccin. De son arrivée en Suisse jusqu'à nos bras.</h2>
+						<h3>Le Roman des vaccins<span>Episode 01</span></h3>
+						<p>Ici le chapeau en rapport avec cet article. Le lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						<h4>Par <span>Richard Etienne</span></h4>
+						<div class="button-container"> 
+							<button>Lire l'article</button>
+							<div class="button-shadow">Lire l'article</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="slide02" class="slide">
+				<div class="slide-gradient"></div>
+				<div class="slide-content">
+					<div class="slide-content-episode">
+						<h2>La plus grande campagne de vaccination de l’histoire s’organise à Genève</h2>
+						<h3>Le Roman des vaccins<span>Episode 02</span></h3>
+						<p>Ici le chapeau en rapport avec cet article. Le lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						<h4>Par <span>Ram Etwareea</span></h4>
+						<div class="button-container">
+							<button>Lire l'article</button>
+							<div class="button-shadow">Lire l'article</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="slide03" class="slide">
+				<div class="slide-gradient"></div>
+				<div class="slide-content">
+					<div class="slide-content-episode">
+						<h2>Comment la pharma suisse a loupé le train de vaccins</h2>
+						<h3>Le Roman des vaccins<span>Episode 03</span></h3>
+						<p>Ici le chapeau en rapport avec cet article. Le lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						<h4>Par <span>Aline Bassin</span></h4>
+						<div class="button-container">
+							<button>Lire l'article</button>
+							<div class="button-shadow">Lire l'article</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="slide04" class="slide">
+				<div class="slide-gradient"></div>
+				<div class="slide-content">
+					<div class="slide-content-episode">
+						<h2>Les banques suisses ont financé Moderna</h2>
+						<h3>Le Roman des vaccins<span>Episode 04</span></h3>
+						<p>Ici le chapeau en rapport avec cet article. Le lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						<h4>Par <span>Michel Guillaume</span></h4>
+						<div class="button-container">
+							<button>Lire l'article</button>
+							<div class="button-shadow">Lire l'article</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="slide05" class="slide">
+				<div class="slide-gradient"></div>
+				<div class="slide-content">
+					<div class="slide-content-episode">
+						<h2>Le déroulement de la campagne de vaccination en Suisse</h2>
+						<h3>Le Roman des vaccins<span>Episode 05</span></h3>
+						<p>Ici le chapeau en rapport avec cet article. Le lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						<h4>Par <span>Mehdi Atmani</span></h4>
+						<div class="button-container">
+							<button>Lire l'article</button>
+							<div class="button-shadow">Lire l'article</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+
+		</div>
+
+		{{ block('footer_brand') }}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSRulePlugin.min.js"></script>
+        <script src="js/main.js"></script>
+	</body>
+	
+</html>

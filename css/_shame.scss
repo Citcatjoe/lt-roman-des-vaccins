@@ -1,0 +1,24 @@
+div.brand-nav
+{
+	display: none;
+
+	@include breakpoint(xs) {   
+        display: block;    
+        background: transparent;
+    }
+}
+
+body.loading
+{
+	aside
+	{
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	div#wrapper
+	{
+		opacity: 0;
+		visibility: hidden;
+	}
+}

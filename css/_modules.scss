@@ -1,0 +1,73 @@
+div.button-container
+{
+	//display: inline;
+	//padding: 0.8em 0 0.8em 0;
+	position: relative;
+	height: 5rem;
+	//overflow: auto;
+}
+
+button
+{
+	background: $flash-color;
+	border: none;
+	color: lighten($gray, 20%);
+    font-family: 'Raleway';
+    font-size: 0.85em;
+    line-height: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0.8em 1.35em 0.8em 1.35em;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+
+    &:hover
+    {
+    	background: lighten($flash-color, 15%);
+    }
+
+    &:focus
+    {
+    	outline: 0;
+    }
+
+  //   &::before
+  //   {
+  //   	content: 'tes';
+		// display: block;
+		// width: 100%;
+		// height: 100%;
+		// position: absolute;
+		// background-color: rgba(242,236,189,0.8);
+		// // top: -5px;
+		// // left: -5px;
+		// //z-index: 2;
+		// border-radius: 3px;
+  //   }
+}
+
+div.button-shadow
+{
+	background: darken($flash-color, 15%);
+	border: none;
+	color: lighten($gray, 20%);
+    font-family: 'Raleway';
+    font-size: 0.85em;
+    line-height: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0.8em 1.35em 0.8em 1.35em;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 2;
+    top: 6px;
+    left: 6px;
+}
