@@ -143,13 +143,17 @@ h2
     font-family: 'Tiempos Headline';
     font-weight: 900;
     font-size: 2.5em;
-    line-height: 1.2em;
+    line-height: 1.3em;
     // font-weight: lighter;
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
     text-shadow: 1px 2px 2px #191818;
     letter-spacing: 0em;
     margin-bottom: 0.9em;
+
+    @include breakpoint(xs) {   
+       font-size: 2.2em;
+    }
 }
 
 h3
@@ -205,7 +209,7 @@ h5
     text-transform: uppercase;
     font-size: 1.23em;
     position: absolute;
-    top: 60%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -60%);
     //text-shadow: 1px 2px 2px #545454;

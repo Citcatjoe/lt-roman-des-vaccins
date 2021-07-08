@@ -26,6 +26,10 @@ button
     z-index: 3;
     cursor: pointer;
 
+    @include breakpoint(xs) {   
+      font-size: 1em;
+    }
+
     &:hover
     {
     	background: lighten($flash-color, 15%);
@@ -70,4 +74,8 @@ div.button-shadow
     z-index: 2;
     top: 6px;
     left: 6px;
+
+    @include breakpoint(xs) {   
+      font-size: 1em;
+    }
 }

@@ -1,10 +1,10 @@
 {
-	"title": "Les plus belles plages de Romandie",
+	"title": "Le roman des vaccins",
 	"description": "Une série d'été du journal Le Temps",
-	"authors": "Auteurs ici",
+	"authors": "Richard Etienne, Ram Etwareea, Aline Bassin, Michel Guillaume ",
 	"imgSocial": "social.jpg", 
 
-	"navBarStyle": "black",
+	"navBarStyle": "",
 	"navBarOffset": "0",
 	"navBarLocked": false,
 
