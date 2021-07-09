@@ -1654,6 +1654,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/chapitre3.jpg" : {
+      "ft" : 16384,
+      "iS" : 757354,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/chapitre3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/chapitrex.jpg" : {
       "ft" : 16384,
       "iS" : 1524646,
